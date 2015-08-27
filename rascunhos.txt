@@ -1,0 +1,8 @@
+CTRL + SHIFT + J: Abre o console do navegador
+É onde são escritos os logs e erros do Javascript
+
+console.log():
+Imprime textos no console
+
+prompt,alert:
+dialogs de javascript
