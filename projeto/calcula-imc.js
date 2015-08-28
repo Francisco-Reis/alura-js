@@ -1,9 +1,11 @@
-var peso = 100;
-var altura = 1.8;
-var nome = "Francisco";
+var paciente = {};
 
-if (altura > 0) {
-   var imc = peso / (altura * altura);
+var paciente.peso = 100;
+var paciente.altura = 1.8;
+var paciente.nome = "Francisco";
+
+if (paciente.altura > 0) {
+   var imc = paciente.peso / (paciente.altura * paciente.altura);
 
    console.log(imc);
 } else {

@@ -9,3 +9,13 @@ dialogs de javascript
 
 HTML4: <script type="text/javacscript">
 HTML5: <script>
+
+Pegar partes do HTML no JacaScript:
+document.getElementById(); e etc
+
+Pegar o texto do elemento
+document.getElementById().textContent
+
+Objetos:
+var obj = {};
+var obj = { item_a: 1, item_b: "string"};
