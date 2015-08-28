@@ -1,4 +1,4 @@
-CTRL + SHIFT + J: Abre o console do navegador
+(CTRL + SHIFT + J) ou F12: Abre o console do navegador
 É onde são escritos os logs e erros do Javascript
 
 console.log():
@@ -6,3 +6,6 @@ Imprime textos no console
 
 prompt,alert:
 dialogs de javascript
+
+HTML4: <script type="text/javacscript">
+HTML5: <script>
