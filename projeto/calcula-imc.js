@@ -1,14 +1,21 @@
+var tablePacientes = document.getElementsByClassName('paciente');
 
-var paciente = {
-    nome: document.getElementById('nome-1').textContent,
-    peso: document.getElementById('peso-1').textContent,
-    altura: document.getElementById('altura-1').textContent
-};
+for (var posicaoAtual = 0; posicaoAtual < tablePacientes.length; posicaoAtual++) {
 
-if (paciente.altura > 0) {
-   var imc = paciente.peso / (paciente.altura * paciente.altura);
-   console.log(imc);
-   document.getElementById('imc-1').textContent = imc;
-} else {
-   console.log("Altura precisa ser maior que zero");
+    var tdPaciente = tablePacientes[posicaoAtual];
+    var paciente = {
+        nome : tdPaciente.getElementsByClassName("info-nome")[0].textContent,
+        peso : tdPaciente.getElementsByClassName("info-peso")[0].textContent,
+        altura : tdPaciente.getElementsByClassName("info-altura")[0].textContent,
+
+    };
+
+    if (paciente.altura > 0) {
+       var imc = tdPaciente.getElementsByClassName("info-imc")[0];
+       imc.textContent = paciente.peso / (paciente.altura * paciente.altura);
+       console.log(imc);
+    } else {
+       console.log("Altura precisa ser maior que zero");
+    }
+
 }
