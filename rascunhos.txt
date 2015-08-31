@@ -41,3 +41,21 @@ Ex: botao.onclick = funcao;
 3o metodo - adicionar Listener -> esse metodo aceita varias acoes no botao
 botao.addEventListener("click", funcaoA)
 botao.addEventListener("click", funcaoB)
+
+Pegar primeiro elemento tag HTML:
+document.querySelector("h1");
+Por ID:
+document.querySelector("#id");
+Pegar array de elementos:
+document.querySelectorAll("h1");
+
+Incluir tags HTML instantaneamente:
+variavel.innerHTML = variavel.innerHTML + itemIncluido;
+
+Prevenir botões no interior do form recarregar pagina:
+event.preventDefault();
+Obs: passar event na função do listener
+botao.addEventListener("click", function(event){...});
+
+Pegar valor de inputs:
+var.value
