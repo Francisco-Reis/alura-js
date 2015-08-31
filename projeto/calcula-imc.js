@@ -7,3 +7,6 @@ function calculaTodosOsIMCs() {
             tdImc.textContent = imc;
     })
 }
+
+var botao = document.getElementById('bt-calcula-imc');
+botao.onclick = calculaTodosOsIMCs;
