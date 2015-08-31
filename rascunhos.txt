@@ -29,3 +29,15 @@ Primeiro pega o elemento e joga na variavel
 var x = document.getElementByClassName("x");
 Quando for mandar pra pagina, usar textContent
 x.textContent = valor
+
+-- Executar Botao --
+1o metodo - No botao HTML:
+onclick="chamaFuncaoJScript()"
+
+2o metodo - totalmente JScript -> Colocar o botao em uma variavel e executa-lo,
+passando uma funçao sem os parenteses.
+Ex: botao.onclick = funcao;
+
+3o metodo - adicionar Listener -> esse metodo aceita varias acoes no botao
+botao.addEventListener("click", funcaoA)
+botao.addEventListener("click", funcaoB)
