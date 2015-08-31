@@ -9,4 +9,4 @@ function calculaTodosOsIMCs() {
 }
 
 var botao = document.getElementById('bt-calcula-imc');
-botao.onclick = calculaTodosOsIMCs;
+botao.addEventListener("click",calculaTodosOsIMCs);
